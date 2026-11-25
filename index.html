@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawser Ahmed | SEO & WordPress Expert in Dhaka</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            800: '#102a4c',
+                            900: '#0a192f',
+                            950: '#06101f',
+                        },
+                        emerald: {
+                            500: '#10b981',
+                            600: '#059669',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-emerald-500 selection:text-white overflow-x-hidden">
+
+    <!-- Sticky Navigation Bar -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#home" class="flex items-center space-x-2.5 group">
+                    <div class="w-10 h-10 rounded-xl bg-navy-900 flex items-center justify-center text-white font-heading font-bold text-xl shadow-md group-hover:bg-emerald-600 transition-colors">
+                        K<span class="text-emerald-400 group-hover:text-white">.</span>
+                    </div>
+                    <div>
+                        <span class="font-heading font-extrabold text-xl text-navy-900 tracking-tight block leading-none">Kawser Ahmed</span>
+                        <span class="text-[11px] font-semibold uppercase tracking-wider text-emerald-600">SEO & WordPress Expert</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="#home" class="text-sm font-medium text-slate-700 hover:text-emerald-600 transition-colors">Home</a>
+                    <a href="#about" class="text-sm font-medium text-slate-700 hover:text-emerald-600 transition-colors">About</a>
+                    <a href="#services" class="text-sm font-medium text-slate-700 hover:text-emerald-600 transition-colors">Services</a>
+                    <a href="#portfolio" class="text-sm font-medium text-slate-700 hover:text-emerald-600 transition-colors">Portfolio</a>
+                    <a href="#case-studies" class="text-sm font-medium text-slate-700 hover:text-emerald-600 transition-colors">Results</a>
+                    <a href="#contact" class="text-sm font-medium text-slate-700 hover:text-emerald-600 transition-colors">Contact</a>
+                </nav>
+
+                <!-- Hire Me CTA & Mobile Toggle -->
+                <div class="flex items-center space-x-3">
+                    <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-navy-900 hover:bg-emerald-600 rounded-xl shadow-sm hover:shadow-md transition-all duration-200">
+                        <span>Hire Me</span>
+                        <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                    <button id="mobile-menu-btn" aria-label="Toggle Menu" class="lg:hidden p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-2 shadow-xl">
+            <a href="#home" class="mobile-link block px-4 py-2.5 rounded-xl text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-emerald-600">Home</a>
+            <a href="#about" class="mobile-link block px-4 py-2.5 rounded-xl text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-emerald-600">About</a>
+            <a href="#services" class="mobile-link block px-4 py-2.5 rounded-xl text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-emerald-600">Services</a>
+            <a href="#portfolio" class="mobile-link block px-4 py-2.5 rounded-xl text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-emerald-600">Portfolio</a>
+            <a href="#case-studies" class="mobile-link block px-4 py-2.5 rounded-xl text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-emerald-600">Results & Case Studies</a>
+            <a href="#contact" class="mobile-link block px-4 py-2.5 rounded-xl text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-emerald-600">Contact</a>
+            <div class="pt-2">
+                <a href="#contact" class="mobile-link block w-full text-center px-5 py-3 text-base font-semibold text-white bg-emerald-600 hover:bg-emerald-700 rounded-xl shadow">
+                    Book a Free SEO Audit
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-28 pb-16 lg:pt-36 lg:pb-24 bg-gradient-to-br from-slate-50 via-white to-blue-50/50 relative overflow-hidden">
+        <!-- Decorative Background Shapes -->
+        <div class="absolute top-20 right-0 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl -z-10"></div>
+        <div class="absolute bottom-10 left-0 w-80 h-80 bg-navy-900/5 rounded-full blur-3xl -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Column: Copy & CTAs -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs sm:text-sm font-semibold">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                        <span>Available for SEO Campaigns & WordPress Projects</span>
+                    </div>
+
+                    <h1 class="font-heading font-extrabold text-3xl sm:text-5xl lg:text-[54px] text-navy-900 leading-[1.15] tracking-tight">
+                        Grow Your Business, <span class="text-transparent bg-clip-text bg-gradient-to-r from-navy-800 to-emerald-600">Rank Higher</span> & Get More Organic Traffic
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Hi, I'm <strong class="text-navy-900 font-semibold">Kawser Ahmed</strong> — an experienced SEO Strategist & WordPress Developer based in Uttara, Dhaka. I help businesses dominate Google search results through data-driven Technical SEO, On-Page/Off-Page optimization, and lightning-fast WordPress websites.
+                    </p>
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center px-7 py-4 text-base font-semibold text-white bg-emerald-600 hover:bg-emerald-700 rounded-xl shadow-lg shadow-emerald-600/20 hover:shadow-xl transition-all duration-200">
+                            <i class="fa-solid fa-magnifying-glass-chart mr-2.5"></i>
+                            Book a Free SEO Audit
+                        </a>
+                        <a href="#portfolio" class="w-full sm:w-auto inline-flex items-center justify-center px-7 py-4 text-base font-semibold text-navy-900 bg-white hover:bg-slate-100 border border-slate-200 rounded-xl shadow-sm transition-all duration-200">
+                            <span>View Projects</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs text-slate-500"></i>
+                        </a>
+                    </div>
+
+                    <!-- Key Stats Counter -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-slate-200/80">
+                        <div class="p-3 rounded-xl bg-white/80 border border-slate-100 shadow-sm">
+                            <div class="font-heading font-extrabold text-2xl sm:text-3xl text-navy-900 counter" data-target="150" data-suffix="+">150+</div>
+                            <div class="text-xs font-medium text-slate-500 mt-0.5">Websites Ranked</div>
+                        </div>
+                        <div class="p-3 rounded-xl bg-white/80 border border-slate-100 shadow-sm">
+                            <div class="font-heading font-extrabold text-2xl sm:text-3xl text-emerald-600 counter" data-target="98" data-suffix="%">98%</div>
+                            <div class="text-xs font-medium text-slate-500 mt-0.5">Client Satisfaction</div>
+                        </div>
+                        <div class="p-3 rounded-xl bg-white/80 border border-slate-100 shadow-sm">
+                            <div class="font-heading font-extrabold text-2xl sm:text-3xl text-navy-900 counter" data-target="5" data-suffix="+">5+</div>
+                            <div class="text-xs font-medium text-slate-500 mt-0.5">Years Experience</div>
+                        </div>
+                        <div class="p-3 rounded-xl bg-white/80 border border-slate-100 shadow-sm">
+                            <div class="font-heading font-extrabold text-2xl sm:text-3xl text-emerald-600 counter" data-target="300" data-suffix="%">300%</div>
+                            <div class="text-xs font-medium text-slate-500 mt-0.5">Avg. Traffic Growth</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Profile Photo Card -->
+                <div class="lg:col-span-5 relative flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <!-- Navy & Emerald Accent Frame -->
+                        <div class="absolute -inset-3 bg-gradient-to-tr from-navy-900 via-navy-800 to-emerald-500 rounded-3xl opacity-15 blur-lg"></div>
+                        <div class="relative bg-white p-3 rounded-3xl shadow-2xl border border-slate-200/90">
+                            <div class="overflow-hidden rounded-2xl bg-slate-100 aspect-square">
+                                <img src="06e9d6a2-d020-4db1-bb45-224a694b1065.png" 
+                                     onerror="this.src='https://placehold.co/600x600/0a192f/10b981?text=Kawser+Ahmed'" 
+                                     alt="Kawser Ahmed - SEO & WordPress Expert" 
+                                     class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500">
+                            </div>
+                            
+                            <!-- Floating Badge 1: Google Ranking -->
+                            <div class="absolute -bottom-5 -left-4 sm:-left-6 bg-white p-3.5 rounded-2xl shadow-xl border border-slate-100 flex items-center space-x-3">
+                                <div class="w-11 h-11 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl">
+                                    <i class="fa-solid fa-arrow-trend-up"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs font-semibold text-slate-400 uppercase">Organic Growth</div>
+                                    <div class="font-heading font-bold text-sm text-navy-900">Top #1 Google Rankings</div>
+                                </div>
+                            </div>
+
+                            <!-- Floating Badge 2: WordPress -->
+                            <div class="hidden sm:flex absolute -top-5 -right-5 bg-navy-900 text-white p-3.5 rounded-2xl shadow-xl items-center space-x-2.5">
+                                <i class="fa-brands fa-wordpress text-2xl text-emerald-400"></i>
+                                <div>
+                                    <div class="text-[11px] text-slate-300">Core Web Vitals</div>
+                                    <div class="font-heading font-bold text-xs">99/100 Speed Score</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Tools & Platforms Strip -->
+    <div class="bg-navy-900 py-7 border-y border-navy-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-xs font-semibold uppercase tracking-widest text-slate-400 mb-5">Industry-Leading SEO & WordPress Stack I Work With</p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 text-center items-center">
+                <div class="flex items-center justify-center space-x-2 text-slate-300 font-semibold text-sm py-2 px-3 rounded-xl bg-navy-800/60">
+                    <i class="fa-brands fa-google text-emerald-400"></i>
+                    <span>Search Console</span>
+                </div>
+                <div class="flex items-center justify-center space-x-2 text-slate-300 font-semibold text-sm py-2 px-3 rounded-xl bg-navy-800/60">
+                    <i class="fa-solid fa-chart-line text-emerald-400"></i>
+                    <span>Ahrefs & SEMrush</span>
+                </div>
+                <div class="flex items-center justify-center space-x-2 text-slate-300 font-semibold text-sm py-2 px-3 rounded-xl bg-navy-800/60">
+                    <i class="fa-brands fa-wordpress text-emerald-400"></i>
+                    <span>WordPress CMS</span>
+                </div>
+                <div class="flex items-center justify-center space-x-2 text-slate-300 font-semibold text-sm py-2 px-3 rounded-xl bg-navy-800/60">
+                    <i class="fa-brands fa-elementor text-emerald-400"></i>
+                    <span>Elementor Pro</span>
+                </div>
+                <div class="flex items-center justify-center space-x-2 text-slate-300 font-semibold text-sm py-2 px-3 rounded-xl bg-navy-800/60">
+                    <i class="fa-solid fa-cart-shopping text-emerald-400"></i>
+                    <span>WooCommerce</span>
+                </div>
+                <div class="flex items-center justify-center space-x-2 text-slate-300 font-semibold text-sm py-2 px-3 rounded-xl bg-navy-800/60">
+                    <i class="fa-solid fa-gauge-high text-emerald-400"></i>
+                    <span>WP Rocket & RankMath</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 lg:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                <!-- Left Image Column -->
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-3xl overflow-hidden shadow-xl border border-slate-200 bg-slate-100">
+                        <img src="06e9d6a2-d020-4db1-bb45-224a694b1065.png" 
+                             onerror="this.src='https://placehold.co/600x650/0a192f/ffffff?text=Kawser+Ahmed'" 
+                             alt="Kawser Ahmed at Desk" 
+                             class="w-full h-auto object-cover">
+                        <div class="bg-navy-900 text-white p-5">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h3 class="font-heading font-bold text-lg">Kawser Ahmed</h3>
+                                    <p class="text-emerald-400 text-xs font-medium">Uttara, Dhaka-1230, Bangladesh</p>
+                                </div>
+                                <a href="tel:01751926362" class="w-10 h-10 rounded-xl bg-emerald-600 hover:bg-emerald-500 flex items-center justify-center text-white transition-colors" title="Call Kawser Ahmed">
+                                    <i class="fa-solid fa-phone"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Bio & Skills Column -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-block px-3.5 py-1 rounded-full bg-navy-900/5 text-navy-900 font-semibold text-xs uppercase tracking-wider">
+                        About Me
+                    </div>
+                    <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-navy-900 leading-tight">
+                        Bridging High-Converting WordPress Design with Result-Driven SEO
+                    </h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        Based in <strong>Uttara, Dhaka</strong>, I specialize in helping local and international brands build authoritative online visibility. Many websites look visually appealing but fail to generate leads because they lack technical SEO foundations and fast load speeds.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        With deep expertise in both <strong>Search Engine Optimization</strong> and <strong>Custom WordPress Development</strong>, I build clean, schema-ready websites engineered from day one to pass Google Core Web Vitals, capture high-intent keywords, and turn organic visitors into paying customers.
+                    </p>
+
+                    <!-- Core Skill Progress Bars -->
+                    <div class="space-y-4 pt-2">
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold text-navy-900 mb-1.5">
+                                <span>Technical & On-Page SEO</span>
+                                <span class="text-emerald-600">98%</span>
+                            </div>
+                            <div class="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden">
+                                <div class="bg-gradient-to-r from-navy-900 to-emerald-500 h-2.5 rounded-full" style="width: 98%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold text-navy-900 mb-1.5">
+                                <span>WordPress & Elementor Development</span>
+                                <span class="text-emerald-600">96%</span>
+                            </div>
+                            <div class="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden">
+                                <div class="bg-gradient-to-r from-navy-900 to-emerald-500 h-2.5 rounded-full" style="width: 96%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold text-navy-900 mb-1.5">
+                                <span>Keyword Research & Competitor Analysis</span>
+                                <span class="text-emerald-600">95%</span>
+                            </div>
+                            <div class="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden">
+                                <div class="bg-gradient-to-r from-navy-900 to-emerald-500 h-2.5 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold text-navy-900 mb-1.5">
+                                <span>Speed Optimization & Core Web Vitals</span>
+                                <span class="text-emerald-600">97%</span>
+                            </div>
+                            <div class="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden">
+                                <div class="bg-gradient-to-r from-navy-900 to-emerald-500 h-2.5 rounded-full" style="width: 97%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold text-navy-900 mb-1.5">
+                                <span>Link Building & Local SEO (GBP)</span>
+                                <span class="text-emerald-600">94%</span>
+                            </div>
+                            <div class="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden">
+                                <div class="bg-gradient-to-r from-navy-900 to-emerald-500 h-2.5 rounded-full" style="width: 94%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Contact Badges -->
+                    <div class="pt-4 flex flex-wrap gap-3">
+                        <a href="mailto:kawserahmed9650@gmail.com" class="inline-flex items-center px-4 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm font-medium transition-colors">
+                            <i class="fa-solid fa-envelope text-emerald-600 mr-2"></i>
+                            kawserahmed9650@gmail.com
+                        </a>
+                        <a href="tel:01751926362" class="inline-flex items-center px-4 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm font-medium transition-colors">
+                            <i class="fa-solid fa-phone text-emerald-600 mr-2"></i>
+                            01751926362
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 lg:py-28 bg-slate-50 border-t border-slate-200/70">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="inline-block px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-700 font-semibold text-xs uppercase tracking-wider">
+                    What I Offer
+                </span>
+                <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-navy-900">
+                    Specialized SEO & WordPress Solutions
+                </h2>
+                <p class="text-slate-600 text-base sm:text-lg">
+                    End-to-end digital growth services tailored to skyrocket your search rankings, improve user experience, and maximize ROI.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-navy-900 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-navy-900 mb-3">Technical & On-Page SEO</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-5">
+                        Complete site architecture optimization, XML sitemaps, schema markup, canonical tags, crawl budget fixes, and keyword-rich content structuring for maximum relevance.
+                    </p>
+                    <ul class="space-y-2 text-xs font-medium text-slate-700">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Schema & Rich Snippets Setup</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Meta Tags & Content Optimization</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-navy-900 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-link"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-navy-900 mb-3">Off-Page SEO & Authority Link Building</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-5">
+                        White-hat outreach campaigns, high-DR guest posts, niche edits, and toxic backlink disavow to boost your Domain Authority and outrank tough competitors safely.
+                    </p>
+                    <ul class="space-y-2 text-xs font-medium text-slate-700">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> High-Authority Editorial Backlinks</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Competitor Backlink Gap Analysis</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-navy-900 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                        <i class="fa-brands fa-wordpress-simple"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-navy-900 mb-3">Custom WordPress Website Design</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-5">
+                        Modern, responsive, and SEO-friendly websites built with Elementor Pro & WooCommerce. Designed for high conversion rates, easy management, and strong security.
+                    </p>
+                    <ul class="space-y-2 text-xs font-medium text-slate-700">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Corporate, Agency & E-Commerce Sites</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Mobile-First & Clean Code Structure</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-navy-900 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-navy-900 mb-3">WordPress Speed & Core Web Vitals</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-5">
+                        Eliminate slow load times and bounce rates. I optimize LCP, FID/INP, and CLS metrics through advanced caching, WebP compression, CDN setup, and database cleanup.
+                    </p>
+                    <ul class="space-y-2 text-xs font-medium text-slate-700">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> 90+ Mobile & Desktop PageSpeed</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Sub-2 Second Loading Time</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-navy-900 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-navy-900 mb-3">Local SEO & Google Business Profile</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-5">
+                        Dominate the Google Map Pack in your city. Full Google Business Profile optimization, local citations, NAP consistency, and hyper-local landing pages for brick-and-mortar growth.
+                    </p>
+                    <ul class="space-y-2 text-xs font-medium text-slate-700">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Google Maps Top 3 Pack Ranking</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Local Citation & Review Strategy</li>
+                    </ul>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-navy-900 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-navy-900 mb-3">SEO Audit & Competitor Strategy</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-5">
+                        Comprehensive 50-point website health audit uncovering hidden ranking blockers, missed keyword opportunities, and a step-by-step 6-month roadmap to outperform rivals.
+                    </p>
+                    <ul class="space-y-2 text-xs font-medium text-slate-700">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Actionable Video & PDF Audit Report</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> High-ROI Keyword Blueprint</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio & SEO Case Studies Section -->
+    <section id="portfolio" class="py-20 lg:py-28 bg-white">
+        <div id="case-studies" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div class="space-y-3 max-w-2xl">
+                    <span class="inline-block px-3.5 py-1 rounded-full bg-navy-900/5 text-navy-900 font-semibold text-xs uppercase tracking-wider">
+                        Proven Track Record
+                    </span>
+                    <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-navy-900">
+                        Portfolio & SEO Case Studies
+                    </h2>
+                    <p class="text-slate-600">
+                        Explore real-world WordPress builds and data-backed SEO campaigns that delivered measurable traffic and revenue growth.
+                    </p>
+                </div>
+
+                <!-- Filter Tabs -->
+                <div class="inline-flex flex-wrap gap-2 bg-slate-100 p-1.5 rounded-2xl self-start md:self-auto" id="portfolio-filters">
+                    <button data-filter="all" class="filter-btn active px-4 py-2 rounded-xl text-sm font-semibold bg-navy-900 text-white shadow-sm transition-all">
+                        All Projects
+                    </button>
+                    <button data-filter="seo" class="filter-btn px-4 py-2 rounded-xl text-sm font-semibold text-slate-600 hover:text-navy-900 transition-all">
+                        SEO Case Studies
+                    </button>
+                    <button data-filter="wordpress" class="filter-btn px-4 py-2 rounded-xl text-sm font-semibold text-slate-600 hover:text-navy-900 transition-all">
+                        WordPress Projects
+                    </button>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+                <!-- Project Cards injected via JS for clean modal data binding -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials Section -->
+    <section class="py-20 bg-navy-900 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="inline-block px-3.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 font-semibold text-xs uppercase tracking-wider">
+                    Client Testimonials
+                </span>
+                <h2 class="font-heading font-extrabold text-3xl sm:text-4xl">
+                    Trusted by Business Owners & Founders
+                </h2>
+                <p class="text-slate-300">
+                    Here is what clients say about working with me on their SEO growth and WordPress web development.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-navy-800/80 backdrop-blur-sm p-8 rounded-2xl border border-slate-700/70 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-4 space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-200 text-sm leading-relaxed italic mb-6">
+                            "Kawser completely transformed our organic search presence. Within 5 months, our main commercial keywords moved from page 4 to the top 3 on Google, increasing our monthly leads by over 260%."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3.5 pt-4 border-t border-slate-700/70">
+                        <div class="w-11 h-11 rounded-full bg-emerald-600 flex items-center justify-center font-heading font-bold text-white">
+                            TR
+                        </div>
+                        <div>
+                            <div class="font-heading font-bold text-sm text-white">Tanvir Rahman</div>
+                            <div class="text-xs text-emerald-400">Managing Director, Dhaka Properties Ltd.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-navy-800/80 backdrop-blur-sm p-8 rounded-2xl border border-slate-700/70 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-4 space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-200 text-sm leading-relaxed italic mb-6">
+                            "Our WooCommerce store was sluggish and failing Core Web Vitals. Kawser redesigned the frontend in Elementor and optimized the backend—our PageSpeed jumped from 42 to 98 and checkout conversions doubled!"
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3.5 pt-4 border-t border-slate-700/70">
+                        <div class="w-11 h-11 rounded-full bg-emerald-600 flex items-center justify-center font-heading font-bold text-white">
+                            SM
+                        </div>
+                        <div>
+                            <div class="font-heading font-bold text-sm text-white">Sarah Mitchell</div>
+                            <div class="text-xs text-emerald-400">Founder, Aura Organic Skincare</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-navy-800/80 backdrop-blur-sm p-8 rounded-2xl border border-slate-700/70 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-4 space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-200 text-sm leading-relaxed italic mb-6">
+                            "Very professional, transparent reporting, and deep technical knowledge. Kawser ranked our dental clinic #1 in the Google Local Map Pack across Uttara and Gulshan. Highly recommended!"
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3.5 pt-4 border-t border-slate-700/70">
+                        <div class="w-11 h-11 rounded-full bg-emerald-600 flex items-center justify-center font-heading font-bold text-white">
+                            Dr
+                        </div>
+                        <div>
+                            <div class="font-heading font-bold text-sm text-white">Dr. Mahmudul Hasan</div>
+                            <div class="text-xs text-emerald-400">Chief Consultant, SmileCare Dental</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Free SEO Audit Section -->
+    <section id="contact" class="py-20 lg:py-28 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Left Contact Info Column -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="inline-block px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-700 font-semibold text-xs uppercase tracking-wider">
+                        Get In Touch
+                    </span>
+                    <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-navy-900 leading-tight">
+                        Ready to Scale Your Rankings & Website?
+                    </h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        Request a free, no-obligation SEO & Website Performance Audit today, or reach out directly via phone, WhatsApp, or email to discuss your project.
+                    </p>
+
+                    <!-- Direct Contact Cards -->
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start space-x-4 p-4 bg-white rounded-2xl border border-slate-200/80 shadow-sm">
+                            <div class="w-12 h-12 rounded-xl bg-navy-900 text-emerald-400 flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-semibold uppercase tracking-wider text-slate-400">Phone / WhatsApp</div>
+                                <a href="tel:01751926362" class="font-heading font-bold text-lg text-navy-900 hover:text-emerald-600 transition-colors block">01751926362</a>
+                                <div class="flex space-x-3 mt-1.5">
+                                    <a href="tel:01751926362" class="text-xs font-semibold text-navy-800 hover:underline">Call Now</a>
+                                    <span class="text-slate-300">|</span>
+                                    <a href="https://wa.me/8801751926362" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-emerald-600 hover:underline">
+                                        <i class="fa-brands fa-whatsapp mr-1"></i>Chat on WhatsApp
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-4 bg-white rounded-2xl border border-slate-200/80 shadow-sm">
+                            <div class="w-12 h-12 rounded-xl bg-navy-900 text-emerald-400 flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-envelope-open-text"></i>
+                            </div>
+                            <div class="min-w-0 flex-1">
+                                <div class="text-xs font-semibold uppercase tracking-wider text-slate-400">Email Address</div>
+                                <a href="mailto:kawserahmed9650@gmail.com" class="font-heading font-bold text-base sm:text-lg text-navy-900 hover:text-emerald-600 transition-colors break-all block">
+                                    kawserahmed9650@gmail.com
+                                </a>
+                                <button id="copy-email-btn" type="button" class="mt-1 text-xs font-semibold text-emerald-600 hover:text-emerald-700 inline-flex items-center">
+                                    <i class="fa-regular fa-copy mr-1"></i> <span id="copy-email-text">Copy Email</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-4 bg-white rounded-2xl border border-slate-200/80 shadow-sm">
+                            <div class="w-12 h-12 rounded-xl bg-navy-900 text-emerald-400 flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-semibold uppercase tracking-wider text-slate-400">Office Location</div>
+                                <p class="font-heading font-bold text-base text-navy-900">
+                                    Sector#10, Road#10, House#2
+                                </p>
+                                <p class="text-sm text-slate-600">Uttara, Dhaka-1230, Bangladesh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Interactive Audit / Contact Form -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white p-6 sm:p-10 rounded-3xl shadow-xl border border-slate-200/90">
+                        <h3 class="font-heading font-bold text-2xl text-navy-900 mb-2">Request Your Free SEO Audit or Quote</h3>
+                        <p class="text-sm text-slate-500 mb-6">Fill out the details below and I will send a personalized analysis within 24 hours.</p>
+
+                        <!-- Confirmation Feedback Banner (Hidden by default) -->
+                        <div id="form-success" class="hidden mb-6 p-5 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-900">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-9 h-9 rounded-full bg-emerald-600 text-white flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-heading font-bold text-base text-emerald-900">Thank You! Your Request Has Been Received.</h4>
+                                    <p id="form-success-details" class="text-sm text-emerald-800 mt-1"></p>
+                                    <button type="button" id="reset-form-btn" class="mt-3 text-xs font-bold uppercase tracking-wider text-emerald-700 hover:underline">
+                                        Send Another Inquiry
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form id="audit-form" class="space-y-5">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label for="client-name" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Full Name *</label>
+                                    <input type="text" id="client-name" required placeholder="e.g. Rahim Uddin" 
+                                           class="w-full px-4 py-3.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition-all">
+                                </div>
+                                <div>
+                                    <label for="client-email" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Email Address *</label>
+                                    <input type="email" id="client-email" required placeholder="you@company.com" 
+                                           class="w-full px-4 py-3.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition-all">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label for="client-phone" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Phone / WhatsApp</label>
+                                    <input type="tel" id="client-phone" placeholder="e.g. +880 17XX-XXXXXX" 
+                                           class="w-full px-4 py-3.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition-all">
+                                </div>
+                                <div>
+                                    <label for="website-url" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Website URL (Optional)</label>
+                                    <input type="text" id="website-url" placeholder="https://yourwebsite.com" 
+                                           class="w-full px-4 py-3.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition-all">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="service-needed" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Service Needed *</label>
+                                <select id="service-needed" required 
+                                        class="w-full px-4 py-3.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition-all">
+                                    <option value="Free Comprehensive SEO Audit">Free Comprehensive SEO Audit</option>
+                                    <option value="Full-Service Monthly SEO Campaign">Full-Service Monthly SEO Campaign</option>
+                                    <option value="Custom WordPress / WooCommerce Website">Custom WordPress / WooCommerce Website</option>
+                                    <option value="WordPress Speed & Core Web Vitals Optimization">WordPress Speed & Core Web Vitals Optimization</option>
+                                    <option value="Local SEO & Google Business Profile Ranking">Local SEO & Google Business Profile Ranking</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="project-message" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Project Goals & Details *</label>
+                                <textarea id="project-message" rows="4" required placeholder="Tell me about your business goals, target keywords, or WordPress project requirements..." 
+                                          class="w-full px-4 py-3.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition-all"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 px-6 bg-navy-900 hover:bg-emerald-600 text-white font-heading font-bold text-base rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center space-x-2">
+                                <span>Send Message & Request Free Audit</span>
+                                <i class="fa-solid fa-paper-plane text-sm"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-950 text-slate-300 pt-16 pb-8 border-t border-navy-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-navy-800">
+                <!-- Brand -->
+                <div class="space-y-4">
+                    <a href="#home" class="flex items-center space-x-2.5">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center text-white font-heading font-bold text-xl">
+                            K.
+                        </div>
+                        <div>
+                            <span class="font-heading font-extrabold text-xl text-white block leading-none">Kawser Ahmed</span>
+                            <span class="text-[11px] font-semibold uppercase tracking-wider text-emerald-400">SEO & WordPress Expert</span>
+                        </div>
+                    </a>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Helping businesses grow organic traffic, achieve top Google search rankings, and build high-speed WordPress websites.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-heading font-bold text-white text-base mb-4">Quick Links</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#home" class="hover:text-emerald-400 transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-emerald-400 transition-colors">About Me</a></li>
+                        <li><a href="#services" class="hover:text-emerald-400 transition-colors">SEO & WP Services</a></li>
+                        <li><a href="#portfolio" class="hover:text-emerald-400 transition-colors">Case Studies & Portfolio</a></li>
+                        <li><a href="#contact" class="hover:text-emerald-400 transition-colors">Book Free SEO Audit</a></li>
+                    </ul>
+                </div>
+
+                <!-- Core Services -->
+                <div>
+                    <h4 class="font-heading font-bold text-white text-base mb-4">Core Expertise</h4>
+                    <ul class="space-y-2.5 text-sm text-slate-400">
+                        <li>Technical & On-Page SEO</li>
+                        <li>Authority Link Building</li>
+                        <li>Custom WordPress & Elementor</li>
+                        <li>Core Web Vitals Optimization</li>
+                        <li>Local SEO & Map Pack Ranking</li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-heading font-bold text-white text-base mb-4">Contact Info</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start space-x-2.5">
+                            <i class="fa-solid fa-location-dot text-emerald-400 mt-1"></i>
+                            <span>Sector#10, Road#10, House#2, Uttara, Dhaka-1230</span>
+                        </li>
+                        <li class="flex items-center space-x-2.5">
+                            <i class="fa-solid fa-phone text-emerald-400"></i>
+                            <a href="tel:01751926362" class="hover:text-white">01751926362</a>
+                        </li>
+                        <li class="flex items-center space-x-2.5">
+                            <i class="fa-solid fa-envelope text-emerald-400"></i>
+                            <a href="mailto:kawserahmed9650@gmail.com" class="hover:text-white break-all">kawserahmed9650@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>&copy; <span id="current-year">2026</span> Kawser Ahmed. All Rights Reserved.</p>
+                <p>Designed & Optimized for Search Engines by <span class="text-emerald-400 font-semibold">Kawser Ahmed</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Quick Button -->
+    <a href="https://wa.me/8801751926362" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"
+       class="fixed bottom-6 right-6 z-40 w-14 h-14 bg-emerald-600 hover:bg-emerald-500 text-white rounded-full shadow-2xl flex items-center justify-center text-2xl transition-transform hover:scale-110">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Case Study / Project Details Modal -->
+    <div id="project-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-navy-950/75 backdrop-blur-sm">
+        <div class="bg-white rounded-3xl max-w-2xl w-full overflow-hidden shadow-2xl border border-slate-200 animate-[fadeIn_0.2s_ease-out]">
+            <div class="bg-navy-900 p-6 text-white flex justify-between items-start">
+                <div>
+                    <span id="modal-category" class="inline-block px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold uppercase tracking-wider mb-2"></span>
+                    <h3 id="modal-title" class="font-heading font-extrabold text-xl sm:text-2xl"></h3>
+                </div>
+                <button id="close-modal-btn" class="w-9 h-9 rounded-xl bg-navy-800 hover:bg-slate-700 text-slate-300 hover:text-white flex items-center justify-center transition-colors">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+            <div class="p-6 sm:p-8 space-y-6 max-h-[80vh] overflow-y-auto">
+                <!-- Key Metrics Highlight Row -->
+                <div id="modal-metrics" class="grid grid-cols-3 gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200/80 text-center">
+                </div>
+
+                <div>
+                    <h4 class="font-heading font-bold text-sm uppercase tracking-wider text-navy-900 mb-2">The Challenge</h4>
+                    <p id="modal-challenge" class="text-sm text-slate-600 leading-relaxed"></p>
+                </div>
+
+                <div>
+                    <h4 class="font-heading font-bold text-sm uppercase tracking-wider text-navy-900 mb-2">Strategy & Execution</h4>
+                    <p id="modal-solution" class="text-sm text-slate-600 leading-relaxed"></p>
+                </div>
+
+                <div class="pt-4 border-t border-slate-200 flex flex-col sm:flex-row justify-between items-center gap-4">
+                    <div class="text-xs text-slate-500 font-medium">Want similar results for your business?</div>
+                    <a href="#contact" id="modal-cta-btn" class="w-full sm:w-auto text-center px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold transition-colors">
+                        Request Free Audit
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set dynamic year
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // Mobile Menu Toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                if (mobileMenu.classList.contains('hidden')) {
+                    menuIcon.classList.remove('fa-xmark');
+                    menuIcon.classList.add('fa-bars');
+                } else {
+                    menuIcon.classList.remove('fa-bars');
+                    menuIcon.classList.add('fa-xmark');
+                }
+            });
+
+            // Close mobile menu when clicking a link
+            document.querySelectorAll('.mobile-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.classList.remove('fa-xmark');
+                    menuIcon.classList.add('fa-bars');
+                });
+            });
+
+            // Portfolio & Case Studies Data
+            const projects = [
+                {
+                    id: 1,
+                    category: 'seo',
+                    badge: 'SEO Case Study',
+                    title: 'E-Commerce Organic Traffic Explosion (+310%)',
+                    summary: 'Scaled an online electronics & gadget retailer from 4,500 to 18,450+ monthly organic visitors in 6 months.',
+                    metricHighlight: '+310% Organic Traffic',
+                    secondaryMetric: '42 Top-3 Keywords',
+                    metrics: [
+                        { label: 'Traffic Growth', value: '+310%' },
+                        { label: 'Top 3 Rankings', value: '42 Keywords' },
+                        { label: 'Revenue Lift', value: '+215%' }
+                    ],
+                    challenge: 'The client had over 800 product pages suffering from duplicate meta descriptions, slow mobile load speed, and zero structured product schema.',
+                    solution: 'Executed a complete technical SEO overhaul, implemented Product & Review JSON-LD schema, consolidated faceted navigation URLs, and built 35+ niche-relevant editorial backlinks.'
+                },
+                {
+                    id: 2,
+                    category: 'wordpress',
+                    badge: 'WordPress & Speed',
+                    title: 'Corporate Real Estate Portal & WooCommerce Booking',
+                    summary: 'Custom Elementor Pro & WordPress build achieving a 99/100 Google PageSpeed score and instant property filtering.',
+                    metricHighlight: '99/100 PageSpeed',
+                    secondaryMetric: '1.1s Load Time',
+                    metrics: [
+                        { label: 'Mobile Score', value: '96/100' },
+                        { label: 'Desktop Score', value: '99/100' },
+                        { label: 'Lead Conv. Rate', value: '+68%' }
+                    ],
+                    challenge: 'Their legacy site took over 6.5 seconds to load on mobile devices, causing a 74% bounce rate among prospective property buyers.',
+                    solution: 'Rebuilt the entire platform on lightweight WordPress architecture using Elementor Pro, custom post types, WebP image pipelines, and server-level caching.'
+                },
+                {
+                    id: 3,
+                    category: 'seo',
+                    badge: 'Local SEO',
+                    title: 'Multi-Location Dental Clinic Google Map Pack #1',
+                    summary: 'Ranked a Dhaka-based healthcare & dental clinic #1 in Google Maps for 18 high-intent local treatment searches.',
+                    metricHighlight: '#1 Map Pack Rank',
+                    secondaryMetric: '+240% Phone Calls',
+                    metrics: [
+                        { label: 'Map Pack Rank', value: 'Top #1' },
+                        { label: 'Monthly Calls', value: '+240%' },
+                        { label: 'Direction Clicks', value: '+190%' }
+                    ],
+                    challenge: 'Competing against established hospitals in Uttara and Gulshan with inconsistent NAP citations and an unoptimized Google Business Profile.',
+                    solution: 'Optimized Google Business Profiles, created hyper-local service landing pages with MedicalClinic schema, built 60+ local citations, and automated patient review generation.'
+                },
+                {
+                    id: 4,
+                    category: 'wordpress',
+                    badge: 'WordPress E-Commerce',
+                    title: 'Organic Skincare WooCommerce Store Redesign',
+                    summary: 'High-converting, mobile-first WooCommerce storefront engineered for frictionless checkout and SEO scalability.',
+                    metricHighlight: '2.4x Checkout Rate',
+                    secondaryMetric: '98/100 Core Vitals',
+                    metrics: [
+                        { label: 'Checkout Conv.', value: '2.4x' },
+                        { label: 'Core Web Vitals', value: 'Passed (98)' },
+                        { label: 'Avg. Order Value', value: '+34%' }
+                    ],
+                    challenge: 'High cart abandonment due to a cluttered 5-step checkout process and unoptimized product category pages.',
+                    solution: 'Designed a clean, trust-focused UI in WordPress + WooCommerce with one-page express checkout, SEO-optimized collection descriptions, and instant AJAX search.'
+                },
+                {
+                    id: 5,
+                    category: 'seo',
+                    badge: 'Technical & Off-Page SEO',
+                    title: 'B2B SaaS Blog Authority & Lead Generation Campaign',
+                    summary: 'Grew Domain Rating from DR 14 to DR 41 and captured 12,000+ monthly B2B decision-makers through topic clusters.',
+                    metricHighlight: 'DR 14 → DR 41',
+                    secondaryMetric: '+410% Demo Signups',
+                    metrics: [
+                        { label: 'Domain Rating', value: '14 → 41' },
+                        { label: 'Organic Signups', value: '+410%' },
+                        { label: 'Featured Snippets', value: '19 Won' }
+                    ],
+                    challenge: 'A promising SaaS startup was relying 100% on expensive paid ads with zero organic visibility for bottom-of-funnel comparison keywords.',
+                    solution: 'Built 6 comprehensive pillar-cluster content hubs, captured 19 Google Featured Snippets, and ran a white-hat digital PR link-building campaign.'
+                },
+                {
+                    id: 6,
+                    category: 'wordpress',
+                    badge: 'WordPress + SEO',
+                    title: 'International Travel & Visa Consultancy Website',
+                    summary: 'Full-stack WordPress development and on-page SEO setup resulting in first-page rankings within 90 days of launch.',
+                    metricHighlight: 'Page 1 in 90 Days',
+                    secondaryMetric: '97/100 Speed Score',
+                    metrics: [
+                        { label: 'Time to Page 1', value: '90 Days' },
+                        { label: 'Speed Score', value: '97/100' },
+                        { label: 'Monthly Inquiries', value: '320+' }
+                    ],
+                    challenge: 'Needed a brand-new authoritative website from scratch that could rank quickly for competitive student visa and tour packages.',
+                    solution: 'Architected an SEO-first site silo structure in WordPress, integrated RankMath Pro schema, custom inquiry forms, and ultra-fast cloud hosting optimization.'
+                }
+            ];
+
+            const projectsGrid = document.getElementById('projects-grid');
+
+            function renderProjects(filter = 'all') {
+                projectsGrid.innerHTML = '';
+                const filtered = filter === 'all' ? projects : projects.filter(p => p.category === filter);
+
+                filtered.forEach(project => {
+                    const isSeo = project.category === 'seo';
+                    const card = document.createElement('div');
+                    card.className = 'bg-slate-50 rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group';
+                    card.innerHTML = `
+                        <div>
+                            <!-- Visual Header Banner -->
+                            <div class="p-6 bg-gradient-to-br ${isSeo ? 'from-navy-900 to-navy-800' : 'from-navy-800 to-emerald-900'} text-white relative overflow-hidden">
+                                <div class="flex justify-between items-center mb-4">
+                                    <span class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider ${isSeo ? 'bg-emerald-500/20 text-emerald-300' : 'bg-white/15 text-white'}">
+                                        ${project.badge}
+                                    </span>
+                                    <i class="fa-solid ${isSeo ? 'fa-chart-line' : 'fa-laptop-code'} text-emerald-400 text-lg"></i>
+                                </div>
+                                <div class="grid grid-cols-2 gap-2 pt-2">
+                                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-2.5">
+                                        <div class="text-[10px] uppercase tracking-wider text-slate-300">Primary Result</div>
+                                        <div class="font-heading font-extrabold text-sm sm:text-base text-emerald-400">${project.metricHighlight}</div>
+                                    </div>
+                                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-2.5">
+                                        <div class="text-[10px] uppercase tracking-wider text-slate-300">Key Impact</div>
+                                        <div class="font-heading font-extrabold text-sm sm:text-base text-white">${project.secondaryMetric}</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card Body -->
+                            <div class="p-6">
+                                <h3 class="font-heading font-bold text-lg text-navy-900 mb-2.5 group-hover:text-emerald-600 transition-colors">
+                                    ${project.title}
+                                </h3>
+                                <p class="text-sm text-slate-600 leading-relaxed">
+                                    ${project.summary}
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="px-6 pb-6 pt-2">
+                            <button type="button" data-id="${project.id}" class="view-case-btn w-full py-3 px-4 rounded-xl bg-white hover:bg-navy-900 text-navy-900 hover:text-white border border-slate-200 hover:border-navy-900 text-sm font-semibold transition-all flex items-center justify-center space-x-2">
+                                <span>View Case Study Details</span>
+                                <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </button>
+                        </div>
+                    `;
+                    projectsGrid.appendChild(card);
+                });
+
+                // Attach modal triggers
+                document.querySelectorAll('.view-case-btn').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        const projectId = parseInt(btn.getAttribute('data-id'), 10);
+                        openModal(projectId);
+                    });
+                });
+            }
+
+            // Initial Render
+            renderProjects('all');
+
+            // Filter Tab Click Handlers
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.filter-btn').forEach(b => {
+                        b.classList.remove('bg-navy-900', 'text-white', 'shadow-sm');
+                        b.classList.add('text-slate-600');
+                    });
+                    btn.classList.add('bg-navy-900', 'text-white', 'shadow-sm');
+                    btn.classList.remove('text-slate-600');
+                    renderProjects(btn.getAttribute('data-filter'));
+                });
+            });
+
+            // Modal Logic
+            const modal = document.getElementById('project-modal');
+            const closeModalBtn = document.getElementById('close-modal-btn');
+            const modalCtaBtn = document.getElementById('modal-cta-btn');
+
+            function openModal(id) {
+                const project = projects.find(p => p.id === id);
+                if (!project) return;
+
+                document.getElementById('modal-category').textContent = project.badge;
+                document.getElementById('modal-title').textContent = project.title;
+                document.getElementById('modal-challenge').textContent = project.challenge;
+                document.getElementById('modal-solution').textContent = project.solution;
+
+                const metricsContainer = document.getElementById('modal-metrics');
+                metricsContainer.innerHTML = project.metrics.map(m => `
+                    <div>
+                        <div class="font-heading font-extrabold text-base sm:text-lg text-emerald-600">${m.value}</div>
+                        <div class="text-[11px] font-semibold text-slate-500">${m.label}</div>
+                    </div>
+                `).join('');
+
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+            }
+
+            function closeModal() {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }
+
+            closeModalBtn.addEventListener('click', closeModal);
+            modalCtaBtn.addEventListener('click', closeModal);
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) closeModal();
+            });
+
+            // Copy Email Feature (using execCommand for iFrame compatibility)
+            const copyEmailBtn = document.getElementById('copy-email-btn');
+            const copyEmailText = document.getElementById('copy-email-text');
+            copyEmailBtn.addEventListener('click', () => {
+                const tempInput = document.createElement('input');
+                tempInput.value = 'kawserahmed9650@gmail.com';
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                try {
+                    document.execCommand('copy');
+                    copyEmailText.textContent = 'Copied to Clipboard!';
+                    setTimeout(() => {
+                        copyEmailText.textContent = 'Copy Email';
+                    }, 2500);
+                } catch (err) {
+                    copyEmailText.textContent = 'kawserahmed9650@gmail.com';
+                }
+                document.body.removeChild(tempInput);
+            });
+
+            // Interactive Contact / Free SEO Audit Form Submission
+            const auditForm = document.getElementById('audit-form');
+            const formSuccess = document.getElementById('form-success');
+            const formSuccessDetails = document.getElementById('form-success-details');
+            const resetFormBtn = document.getElementById('reset-form-btn');
+
+            auditForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const name = document.getElementById('client-name').value.trim();
+                const email = document.getElementById('client-email').value.trim();
+                const service = document.getElementById('service-needed').value;
+                const website = document.getElementById('website-url').value.trim();
+
+                const siteText = website ? ` for <strong>${website}</strong>` : '';
+                formSuccessDetails.innerHTML = `Hi <strong>${name}</strong>, I have received your inquiry regarding <strong>${service}</strong>${siteText}. I will review your details and reply to <strong>${email}</strong> shortly.`;
+
+                auditForm.classList.add('hidden');
+                formSuccess.classList.remove('hidden');
+            });
+
+            resetFormBtn.addEventListener('click', () => {
+                auditForm.reset();
+                formSuccess.classList.add('hidden');
+                auditForm.classList.remove('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
